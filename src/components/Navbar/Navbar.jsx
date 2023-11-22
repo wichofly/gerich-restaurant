@@ -45,13 +45,17 @@ const Navbar = () => {
       </div>
 
       <div className="app__navbar-smallscreen">
-        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => {}} />
+        <GiHamburgerMenu
+          color="#fff"
+          fontSize={27}
+          onClick={() => setToggleMenu(true)}
+        />
 
         <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
           <MdOutlineRestaurantMenu
             fontSize={27}
             className="overlay__close"
-            onClick={() => {}}
+            onClick={() => setToggleMenu(false)}
           />
           <ul className="app__navbar-smallscreen-links">
             <li className="p__opensans">

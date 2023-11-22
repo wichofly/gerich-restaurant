@@ -92,6 +92,10 @@
   right: 20px;
 }
 
+/* 
+  Can not be viewed down 1150px   
+  Can be viewed up, starting at 1151px 
+*/
 @media screen and (max-width: 1150px) {
   .app__navbar-links {
     display: none;

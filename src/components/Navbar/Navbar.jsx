@@ -51,6 +51,7 @@ const Navbar = () => {
           onClick={() => setToggleMenu(true)}
         />
 
+        {/* If toggleMenu is set to true, it shows the links */}
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <MdOutlineRestaurantMenu
@@ -77,7 +78,6 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-        
       </div>
     </nav>
   );

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import './MenuItem.css';
 
 const MenuItem = ({ title, price, tags }) => (
@@ -23,5 +25,11 @@ const MenuItem = ({ title, price, tags }) => (
     </div>
   </div>
 );
+
+MenuItem.propTypes = {
+  title: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  tags: PropTypes.string.isRequired,
+};
 
 export default MenuItem;

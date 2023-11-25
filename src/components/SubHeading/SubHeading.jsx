@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { images } from '../../constants';
 
 const SubHeading = ({ title }) => (
@@ -7,4 +9,12 @@ const SubHeading = ({ title }) => (
   </div>
 );
 
+SubHeading.propTypes = {
+  title: PropTypes.string,
+};
+
 export default SubHeading;
+
+/*
+  PropTypes aren’t commonly used in modern React. Use TypeScript for static type checking.
+*/

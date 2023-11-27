@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { images, data } from '../../constants';
 import { SubHeading } from '../../components';
 
@@ -32,5 +33,9 @@ const Laurels = () => (
     </div>
   </div>
 );
+
+AwardCard.propTypes = {
+  award: PropTypes.string,
+};
 
 export default Laurels;

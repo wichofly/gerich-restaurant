@@ -1,7 +1,7 @@
 import './App.css';
 
 import { Navbar } from './components';
-import { AboutUs, Chef, Header, SpecialMenu } from './container';
+import { AboutUs, Chef, Header, SpecialMenu, Intro } from './container';
 
 function App() {
   return (
@@ -11,6 +11,7 @@ function App() {
       <AboutUs />
       <SpecialMenu />
       <Chef />
+      <Intro />
     </div>
   );
 }

@@ -8,6 +8,7 @@ import {
   SpecialMenu,
   Intro,
   Laurels,
+  Gallery,
 } from './container';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Chef />
       <Intro />
       <Laurels />
+      <Gallery />
     </div>
   );
 }

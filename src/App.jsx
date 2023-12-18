@@ -10,6 +10,7 @@ import {
   Laurels,
   Gallery,
   FindUs,
+  Footer,
 } from './container';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Laurels />
       <Gallery />
       <FindUs />
+      <Footer />
     </div>
   );
 }

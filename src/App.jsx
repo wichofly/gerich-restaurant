@@ -9,6 +9,7 @@ import {
   Intro,
   Laurels,
   Gallery,
+  FindUs,
 } from './container';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Intro />
       <Laurels />
       <Gallery />
+      <FindUs />
     </div>
   );
 }

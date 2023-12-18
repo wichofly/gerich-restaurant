@@ -31,7 +31,7 @@ const Gallery = () => {
 
   return (
     <div className="app__gallery flex__center">
-      <div className="app_gallery-content">
+      <div className="app__gallery-content">
         <SubHeading title="Instagram" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p className="p__opensans" style={{ color: '#AAA', marginTop: '2rem' }}>

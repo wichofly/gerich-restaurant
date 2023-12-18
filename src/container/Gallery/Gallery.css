@@ -1,5 +1,4 @@
 .app__gallery {
-  display: flex;
   flex-direction: row;
 
   background: var(--color-black);
@@ -22,7 +21,7 @@
 }
 
 .app__gallery-images {
-  display: 1;
+  flex: 1;
   display: flex;
   flex-direction: row;
   max-width: 50%;
@@ -33,12 +32,10 @@
   display: flex;
   flex-direction: row;
   width: max-content;
-  overflow: scroll;
-  -ms-text-overflow-style: none;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-/* hide it to move it with arrows */
 
 .app__gallery-images_container::-webkit-scrollbar {
   display: none;
@@ -55,7 +52,7 @@
   position: absolute;
   color: #fff;
   font-size: 2rem;
-  opacity: 0.5;
+  opacity: 0;
   transition: .5s ease;
   cursor: pointer;
 }
@@ -65,7 +62,7 @@
   height: 100%;
   object-fit: cover;
   opacity: 1;
-  transition: 0.5 ease;
+  transition: .5s ease;
 }
 
 .app__gallery-images_card:hover img {
@@ -91,7 +88,7 @@
   color: var(--color-golden);
   font-size: 2rem;
   cursor: pointer;
-  background-color: var(--color-black);
+  background: var(--color-black);
   border-radius: 5px;
 }
 
@@ -100,6 +97,10 @@
 }
 
 @media screen and (min-width: 2000px) {
+  .app__gallery-content button {
+    margin-top: 2rem;
+  }
+
   .app__gallery-content {
     min-width: 1000px;
     padding-right: 4rem;
@@ -107,11 +108,11 @@
 
   .app__gallery-images_card {
     min-width: 400px;
-    height: 550px;
+    height: 547px;
   }
 }
 
-@media screen and (min-width: 1150px) {
+@media screen and (max-width: 1150px) {
   .app__gallery {
     flex-direction: column;
   }
